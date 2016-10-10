@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorLoginBackground">#F8EEEE</color>
+    <color name="colorLoginBtn">#00a0e9</color>
+    <color name="colorTableLayoutSelect">#00b7ee</color>
+    <color name="colorToolbar">#1d8ae7</color>
+    <color name="colorGuidance">#1d8ae7</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#9b9b9b</color>
+    <color name="lightgray">#9cd4d4d4</color>
+    <color name="lightestgray">#4dd4d4d4</color>
+    <color name="text_normal">#818181</color>
+    <color name="compete_order_statues">#f9039414</color>
+</resources>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zdpractice.hworkservice.ui.competeorder.CompeteOrderinfoActivity"
+    android:orientation="vertical"
+    android:background="@color/lightestgray">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_competeorderinfo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorToolbar">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/toolbar_back"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/icon_return_normal"/>-->
+        <!---->
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:textSize="15dp"
+                android:text="订单状态"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_linkname"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="statues"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:textSize="15dp"
+                android:text="订单类别"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_time"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="style"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:textSize="15dp"
+                android:text="服务时间"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_serviceclass"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="time"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:textSize="15dp"
+                android:text="预约数量"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_confirmnum"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="amount"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:textSize="15dp"
+                android:text="服务地点"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_paymoney"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="address"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:textSize="15dp"
+                android:text="直线距离"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_providerJudgeLevel"
+                android:layout_weight="1"
+                android:text="long"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抢单金额（元/小时）"/>
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/et_fight_price" />
+            <FrameLayout
+                android:layout_weight="0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/logo_backgoound"
+                    />
+                <TextView
+                    android:id="@+id/competeorder_tv_compete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:text="抢"/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

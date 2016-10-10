@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/map_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbar">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/oo"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorToolbar"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/map_transit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center">
+            <TextView
+                android:textSize="20dp"
+                android:id="@+id/i_transit"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="公交"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/map_walk"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/i_walk"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="步行"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/map_bike"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/i_bike"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="骑行"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="295dp"
+            android:layout_marginStart="295dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            >
+
+        </LinearLayout>
+
+
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></com.baidu.mapapi.map.MapView>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/map_way"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@mipmap/map_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/up" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+        <TextView
+
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/way"/>
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/map_lL1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+
+        >
+
+        <ImageView
+            android:src="@mipmap/map_drown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/drown" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#969696"
+
+            />
+        <ListView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/iiiii">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
